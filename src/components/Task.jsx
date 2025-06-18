@@ -1,9 +1,10 @@
 import Button from "./Button";
 
-const Task=()=>{
+const Task=({task})=>{
+
     return(
         <div className="flex gap-2">
-       <input type="text"  className="h-12 w-[300px] bg-pink-200" />            
+       <div className="h-12 w-[300px] bg-pink-200">{task} </div>            
 <div className="flex gap-2">
     <Button text={"Edit"}/> 
     <Button text={"Delete"}/> 
